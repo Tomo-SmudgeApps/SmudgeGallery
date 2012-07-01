@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E56AE780159D6BE700E0DE98 /* SmudgeGalleryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E56AE77F159D6BE700E0DE98 /* SmudgeGalleryModel.m */; };
+		E56AE786159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE782159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png */; };
+		E56AE787159D6C6F00E0DE98 /* galleryDoneButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE783159D6C6F00E0DE98 /* galleryDoneButton@2x.png */; };
+		E56AE788159D6C6F00E0DE98 /* galleryDoneButton-h.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE784159D6C6F00E0DE98 /* galleryDoneButton-h.png */; };
+		E56AE789159D6C6F00E0DE98 /* galleryDoneButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE785159D6C6F00E0DE98 /* galleryDoneButton.png */; };
+		E5B36071159D550E00923D09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B36070159D550E00923D09 /* UIKit.framework */; };
+		E5B36073159D550E00923D09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B36072159D550E00923D09 /* Foundation.framework */; };
+		E5B36075159D550E00923D09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B36074159D550E00923D09 /* CoreGraphics.framework */; };
+		E5B3607B159D550E00923D09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5B36079159D550E00923D09 /* InfoPlist.strings */; };
+		E5B3607D159D550E00923D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3607C159D550E00923D09 /* main.m */; };
+		E5B36081159D550E00923D09 /* SmudgeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36080159D550E00923D09 /* SmudgeAppDelegate.m */; };
+		E5B36097159D557900923D09 /* ImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3608E159D557900923D09 /* ImageDownloadOperation.m */; };
+		E5B36098159D557900923D09 /* SmudgeGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36090159D557900923D09 /* SmudgeGalleryViewController.m */; };
+		E5B36099159D557900923D09 /* SmudgeGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B36091159D557900923D09 /* SmudgeGalleryViewController.xib */; };
+		E5B3609A159D557900923D09 /* SmudgeGalleryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36093159D557900923D09 /* SmudgeGalleryImageView.m */; };
+		E5B3609B159D557900923D09 /* SmudgeGalleryImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B36094159D557900923D09 /* SmudgeGalleryImageView.xib */; };
+		E5B3609C159D557900923D09 /* SmudgePhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36096159D557900923D09 /* SmudgePhotoContainer.m */; };
+		E5B360A0159D55C300923D09 /* SmudgeImageDLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3609F159D55C300923D09 /* SmudgeImageDLManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E56AE77E159D6BE700E0DE98 /* SmudgeGalleryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeGalleryModel.h; sourceTree = "<group>"; };
+		E56AE77F159D6BE700E0DE98 /* SmudgeGalleryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeGalleryModel.m; sourceTree = "<group>"; };
+		E56AE782159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryDoneButton-h@2x.png"; sourceTree = "<group>"; };
+		E56AE783159D6C6F00E0DE98 /* galleryDoneButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryDoneButton@2x.png"; sourceTree = "<group>"; };
+		E56AE784159D6C6F00E0DE98 /* galleryDoneButton-h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryDoneButton-h.png"; sourceTree = "<group>"; };
+		E56AE785159D6C6F00E0DE98 /* galleryDoneButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galleryDoneButton.png; sourceTree = "<group>"; };
+		E5B3606C159D550E00923D09 /* SmdugeLibraries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmdugeLibraries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B36070159D550E00923D09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E5B36072159D550E00923D09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E5B36074159D550E00923D09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E5B36078159D550E00923D09 /* SmdugeLibraries-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmdugeLibraries-Info.plist"; sourceTree = "<group>"; };
+		E5B3607A159D550E00923D09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E5B3607C159D550E00923D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5B3607E159D550E00923D09 /* SmdugeLibraries-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmdugeLibraries-Prefix.pch"; sourceTree = "<group>"; };
+		E5B3607F159D550E00923D09 /* SmudgeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmudgeAppDelegate.h; sourceTree = "<group>"; };
+		E5B36080159D550E00923D09 /* SmudgeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmudgeAppDelegate.m; sourceTree = "<group>"; };
+		E5B3608D159D557900923D09 /* ImageDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadOperation.h; sourceTree = "<group>"; };
+		E5B3608E159D557900923D09 /* ImageDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadOperation.m; sourceTree = "<group>"; };
+		E5B3608F159D557900923D09 /* SmudgeGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeGalleryViewController.h; sourceTree = "<group>"; };
+		E5B36090159D557900923D09 /* SmudgeGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeGalleryViewController.m; sourceTree = "<group>"; };
+		E5B36091159D557900923D09 /* SmudgeGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmudgeGalleryViewController.xib; sourceTree = "<group>"; };
+		E5B36092159D557900923D09 /* SmudgeGalleryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeGalleryImageView.h; sourceTree = "<group>"; };
+		E5B36093159D557900923D09 /* SmudgeGalleryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeGalleryImageView.m; sourceTree = "<group>"; };
+		E5B36094159D557900923D09 /* SmudgeGalleryImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmudgeGalleryImageView.xib; sourceTree = "<group>"; };
+		E5B36095159D557900923D09 /* SmudgePhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgePhotoContainer.h; sourceTree = "<group>"; };
+		E5B36096159D557900923D09 /* SmudgePhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgePhotoContainer.m; sourceTree = "<group>"; };
+		E5B3609E159D55C300923D09 /* SmudgeImageDLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeImageDLManager.h; sourceTree = "<group>"; };
+		E5B3609F159D55C300923D09 /* SmudgeImageDLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeImageDLManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5B36069159D550E00923D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B36071159D550E00923D09 /* UIKit.framework in Frameworks */,
+				E5B36073159D550E00923D09 /* Foundation.framework in Frameworks */,
+				E5B36075159D550E00923D09 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E56AE781159D6C5C00E0DE98 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E56AE782159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png */,
+				E56AE783159D6C6F00E0DE98 /* galleryDoneButton@2x.png */,
+				E56AE784159D6C6F00E0DE98 /* galleryDoneButton-h.png */,
+				E56AE785159D6C6F00E0DE98 /* galleryDoneButton.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E5B36061159D550E00923D09 = {
+			isa = PBXGroup;
+			children = (
+				E5B36076159D550E00923D09 /* SmdugeLibraries */,
+				E5B3606F159D550E00923D09 /* Frameworks */,
+				E5B3606D159D550E00923D09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5B3606D159D550E00923D09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5B3606C159D550E00923D09 /* SmdugeLibraries.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5B3606F159D550E00923D09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5B36070159D550E00923D09 /* UIKit.framework */,
+				E5B36072159D550E00923D09 /* Foundation.framework */,
+				E5B36074159D550E00923D09 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5B36076159D550E00923D09 /* SmdugeLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				E5B3609D159D558500923D09 /* Gallery */,
+				E5B3607F159D550E00923D09 /* SmudgeAppDelegate.h */,
+				E5B36080159D550E00923D09 /* SmudgeAppDelegate.m */,
+				E5B36077159D550E00923D09 /* Supporting Files */,
+			);
+			path = SmdugeLibraries;
+			sourceTree = "<group>";
+		};
+		E5B36077159D550E00923D09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5B36078159D550E00923D09 /* SmdugeLibraries-Info.plist */,
+				E5B36079159D550E00923D09 /* InfoPlist.strings */,
+				E5B3607C159D550E00923D09 /* main.m */,
+				E5B3607E159D550E00923D09 /* SmdugeLibraries-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5B3609D159D558500923D09 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				E5B3609E159D55C300923D09 /* SmudgeImageDLManager.h */,
+				E5B3609F159D55C300923D09 /* SmudgeImageDLManager.m */,
+				E56AE781159D6C5C00E0DE98 /* Images */,
+				E5B3608D159D557900923D09 /* ImageDownloadOperation.h */,
+				E5B3608E159D557900923D09 /* ImageDownloadOperation.m */,
+				E5B3608F159D557900923D09 /* SmudgeGalleryViewController.h */,
+				E5B36090159D557900923D09 /* SmudgeGalleryViewController.m */,
+				E5B36091159D557900923D09 /* SmudgeGalleryViewController.xib */,
+				E5B36092159D557900923D09 /* SmudgeGalleryImageView.h */,
+				E5B36093159D557900923D09 /* SmudgeGalleryImageView.m */,
+				E5B36094159D557900923D09 /* SmudgeGalleryImageView.xib */,
+				E5B36095159D557900923D09 /* SmudgePhotoContainer.h */,
+				E5B36096159D557900923D09 /* SmudgePhotoContainer.m */,
+				E56AE77E159D6BE700E0DE98 /* SmudgeGalleryModel.h */,
+				E56AE77F159D6BE700E0DE98 /* SmudgeGalleryModel.m */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5B3606B159D550E00923D09 /* SmdugeLibraries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5B3608A159D550E00923D09 /* Build configuration list for PBXNativeTarget "SmdugeLibraries" */;
+			buildPhases = (
+				E5B36068159D550E00923D09 /* Sources */,
+				E5B36069159D550E00923D09 /* Frameworks */,
+				E5B3606A159D550E00923D09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmdugeLibraries;
+			productName = SmdugeLibraries;
+			productReference = E5B3606C159D550E00923D09 /* SmdugeLibraries.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5B36063159D550E00923D09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Smudge;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = E5B36066159D550E00923D09 /* Build configuration list for PBXProject "SmdugeLibraries" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E5B36061159D550E00923D09;
+			productRefGroup = E5B3606D159D550E00923D09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B3606B159D550E00923D09 /* SmdugeLibraries */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5B3606A159D550E00923D09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B3607B159D550E00923D09 /* InfoPlist.strings in Resources */,
+				E5B36099159D557900923D09 /* SmudgeGalleryViewController.xib in Resources */,
+				E5B3609B159D557900923D09 /* SmudgeGalleryImageView.xib in Resources */,
+				E56AE786159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png in Resources */,
+				E56AE787159D6C6F00E0DE98 /* galleryDoneButton@2x.png in Resources */,
+				E56AE788159D6C6F00E0DE98 /* galleryDoneButton-h.png in Resources */,
+				E56AE789159D6C6F00E0DE98 /* galleryDoneButton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5B36068159D550E00923D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B3607D159D550E00923D09 /* main.m in Sources */,
+				E5B36081159D550E00923D09 /* SmudgeAppDelegate.m in Sources */,
+				E5B36097159D557900923D09 /* ImageDownloadOperation.m in Sources */,
+				E5B36098159D557900923D09 /* SmudgeGalleryViewController.m in Sources */,
+				E5B3609A159D557900923D09 /* SmudgeGalleryImageView.m in Sources */,
+				E5B3609C159D557900923D09 /* SmudgePhotoContainer.m in Sources */,
+				E5B360A0159D55C300923D09 /* SmudgeImageDLManager.m in Sources */,
+				E56AE780159D6BE700E0DE98 /* SmudgeGalleryModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5B36079159D550E00923D09 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5B3607A159D550E00923D09 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5B36088159D550E00923D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5B36089159D550E00923D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5B3608B159D550E00923D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmdugeLibraries/SmdugeLibraries-Prefix.pch";
+				INFOPLIST_FILE = "SmdugeLibraries/SmdugeLibraries-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E5B3608C159D550E00923D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmdugeLibraries/SmdugeLibraries-Prefix.pch";
+				INFOPLIST_FILE = "SmdugeLibraries/SmdugeLibraries-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5B36066159D550E00923D09 /* Build configuration list for PBXProject "SmdugeLibraries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5B36088159D550E00923D09 /* Debug */,
+				E5B36089159D550E00923D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5B3608A159D550E00923D09 /* Build configuration list for PBXNativeTarget "SmdugeLibraries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5B3608B159D550E00923D09 /* Debug */,
+				E5B3608C159D550E00923D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5B36063159D550E00923D09 /* Project object */;
+}
