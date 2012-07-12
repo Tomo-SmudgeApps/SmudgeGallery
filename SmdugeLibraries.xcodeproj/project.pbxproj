@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E56AE780159D6BE700E0DE98 /* SmudgeGalleryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E56AE77F159D6BE700E0DE98 /* SmudgeGalleryModel.m */; };
-		E56AE786159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE782159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png */; };
-		E56AE787159D6C6F00E0DE98 /* galleryDoneButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE783159D6C6F00E0DE98 /* galleryDoneButton@2x.png */; };
-		E56AE788159D6C6F00E0DE98 /* galleryDoneButton-h.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE784159D6C6F00E0DE98 /* galleryDoneButton-h.png */; };
-		E56AE789159D6C6F00E0DE98 /* galleryDoneButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E56AE785159D6C6F00E0DE98 /* galleryDoneButton.png */; };
 		E5B36071159D550E00923D09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B36070159D550E00923D09 /* UIKit.framework */; };
 		E5B36073159D550E00923D09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B36072159D550E00923D09 /* Foundation.framework */; };
 		E5B36075159D550E00923D09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B36074159D550E00923D09 /* CoreGraphics.framework */; };
@@ -30,10 +26,6 @@
 /* Begin PBXFileReference section */
 		E56AE77E159D6BE700E0DE98 /* SmudgeGalleryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeGalleryModel.h; sourceTree = "<group>"; };
 		E56AE77F159D6BE700E0DE98 /* SmudgeGalleryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeGalleryModel.m; sourceTree = "<group>"; };
-		E56AE782159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryDoneButton-h@2x.png"; sourceTree = "<group>"; };
-		E56AE783159D6C6F00E0DE98 /* galleryDoneButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryDoneButton@2x.png"; sourceTree = "<group>"; };
-		E56AE784159D6C6F00E0DE98 /* galleryDoneButton-h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryDoneButton-h.png"; sourceTree = "<group>"; };
-		E56AE785159D6C6F00E0DE98 /* galleryDoneButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galleryDoneButton.png; sourceTree = "<group>"; };
 		E5B3606C159D550E00923D09 /* SmdugeLibraries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmdugeLibraries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B36070159D550E00923D09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E5B36072159D550E00923D09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,17 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E56AE781159D6C5C00E0DE98 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				E56AE782159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png */,
-				E56AE783159D6C6F00E0DE98 /* galleryDoneButton@2x.png */,
-				E56AE784159D6C6F00E0DE98 /* galleryDoneButton-h.png */,
-				E56AE785159D6C6F00E0DE98 /* galleryDoneButton.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		E5B36061159D550E00923D09 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +118,6 @@
 			children = (
 				E5B3609E159D55C300923D09 /* SmudgeImageDLManager.h */,
 				E5B3609F159D55C300923D09 /* SmudgeImageDLManager.m */,
-				E56AE781159D6C5C00E0DE98 /* Images */,
 				E5B3608D159D557900923D09 /* ImageDownloadOperation.h */,
 				E5B3608E159D557900923D09 /* ImageDownloadOperation.m */,
 				E5B3608F159D557900923D09 /* SmudgeGalleryViewController.h */,
@@ -208,10 +188,6 @@
 				E5B3607B159D550E00923D09 /* InfoPlist.strings in Resources */,
 				E5B36099159D557900923D09 /* SmudgeGalleryViewController.xib in Resources */,
 				E5B3609B159D557900923D09 /* SmudgeGalleryImageView.xib in Resources */,
-				E56AE786159D6C6F00E0DE98 /* galleryDoneButton-h@2x.png in Resources */,
-				E56AE787159D6C6F00E0DE98 /* galleryDoneButton@2x.png in Resources */,
-				E56AE788159D6C6F00E0DE98 /* galleryDoneButton-h.png in Resources */,
-				E56AE789159D6C6F00E0DE98 /* galleryDoneButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
