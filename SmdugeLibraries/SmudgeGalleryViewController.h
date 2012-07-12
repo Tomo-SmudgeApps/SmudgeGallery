@@ -39,7 +39,7 @@
 
 #pragma mark - IBOutlets
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *imageNumberLabel;
-@property (unsafe_unretained, nonatomic) IBOutlet UIView *topBar;
+@property (unsafe_unretained, nonatomic) IBOutlet UINavigationBar *topNavBar;
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *captionView;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *captionLabel;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *galleryLabel;

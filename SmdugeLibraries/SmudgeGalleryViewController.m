@@ -22,7 +22,7 @@
 #import "SmudgeGalleryModel.h"
 
 @implementation SmudgeGalleryViewController
-@synthesize topBar;
+@synthesize topNavBar;
 @synthesize captionView;
 @synthesize galleryLabel;
 @synthesize captionLabel;
@@ -218,10 +218,10 @@
 #pragma mark - Notification
 -(void) handleChangeGalleryViewState{
 	
-    if (topBar.alpha > 0.5) {
+    if (topNavBar.alpha > 0.5) {
         [UIView animateWithDuration:0.3 
                          animations:^(void){
-                             topBar.alpha = 0.0;
+                             topNavBar.alpha = 0.0;
                              captionView.alpha = 0.0;
                          }
          ];
@@ -229,7 +229,7 @@
     else{
         [UIView animateWithDuration:0.3 
                          animations:^(void){
-                             topBar.alpha = 1.0;
+                             topNavBar.alpha = 1.0;
                              captionView.alpha = 1.0;
                          }
          ];
@@ -247,8 +247,10 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleChangeGalleryViewState) name:@"changeGalleryViewState" object:nil];
     
     if (galleryName != nil) {
-        galleryLabel.text = galleryName;
+        self.topNavBar.topItem.title = galleryName;
     }
+    
+    self.topNavBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:imageNumberLabel];
     
     currentOffset = 0;
 	
@@ -447,6 +449,7 @@
     [self setImageNumberLabel:nil];
     [self setCaptionView:nil];
     [self setCaptionLabel:nil];
+    [self setTopNavBar:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
