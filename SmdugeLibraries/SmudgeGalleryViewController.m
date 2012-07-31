@@ -18,7 +18,7 @@
 //
 
 #import "SmudgeGalleryViewController.h"
-#import "ImageDownloadOperation.h"
+#import "SmudgeImageDownloadOperation.h"
 #import "SmudgeGalleryModel.h"
 
 @implementation SmudgeGalleryViewController
@@ -144,7 +144,7 @@
                 
                 SmudgeGalleryModel *model = [imageArray objectAtIndex:currentPosition+1];
                 
-                ImageDownloadOperation *operation = [[ImageDownloadOperation alloc] init];
+                SmudgeImageDownloadOperation *operation = [[SmudgeImageDownloadOperation alloc] init];
                 operation.imageIndex = currentPosition+1;
                 operation.imageURLToLoad = model.imageURL;
                 operation.delegate = self;
@@ -170,7 +170,7 @@
                 
                 SmudgeGalleryModel *model = [imageArray objectAtIndex:currentPosition-1];
                 
-                ImageDownloadOperation *operation = [[ImageDownloadOperation alloc] init];
+                SmudgeImageDownloadOperation *operation = [[SmudgeImageDownloadOperation alloc] init];
                 operation.imageIndex = currentPosition-1;
                 operation.imageURLToLoad = model.imageURL;
                 operation.delegate = self;
@@ -200,7 +200,7 @@
                 if (i >= 0 && i < imageArray.count) {
                     SmudgeGalleryModel *model = [imageArray objectAtIndex:i];
                     
-                    ImageDownloadOperation *operation = [[ImageDownloadOperation alloc] init];
+                    SmudgeImageDownloadOperation *operation = [[SmudgeImageDownloadOperation alloc] init];
                     operation.imageIndex = i;
                     operation.imageURLToLoad = model.imageURL;
                     operation.delegate = self;
@@ -323,7 +323,7 @@
     SmudgeGalleryModel *model = [imageArray objectAtIndex:currentPosition];
     
     //Start loading the first two images
-    ImageDownloadOperation *operation = [[ImageDownloadOperation alloc] init];
+    SmudgeImageDownloadOperation *operation = [[SmudgeImageDownloadOperation alloc] init];
     operation.imageIndex = currentPosition;
     operation.imageURLToLoad = model.imageURL;
     operation.delegate = self;
@@ -334,7 +334,7 @@
     if(currentPosition + 1 < imageArray.count){
         SmudgeGalleryModel *model = [imageArray objectAtIndex:currentPosition+1];
         
-        ImageDownloadOperation *secondOperation = [[ImageDownloadOperation alloc] init];
+        SmudgeImageDownloadOperation *secondOperation = [[SmudgeImageDownloadOperation alloc] init];
         secondOperation.imageIndex = currentPosition+1;
         secondOperation.imageURLToLoad = model.imageURL;
         secondOperation.delegate = self;
@@ -345,7 +345,7 @@
     if (currentPosition - 1 >= 0) {
         SmudgeGalleryModel *model = [imageArray objectAtIndex:currentPosition-1];
         
-        ImageDownloadOperation *secondOperation = [[ImageDownloadOperation alloc] init];
+        SmudgeImageDownloadOperation *secondOperation = [[SmudgeImageDownloadOperation alloc] init];
         secondOperation.imageIndex = currentPosition-1;
         secondOperation.imageURLToLoad = model.imageURL;
         secondOperation.delegate = self;
@@ -432,7 +432,7 @@
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
-    for (ImageDownloadOperation *op in [imageLoadingQueue operations]) {
+    for (SmudgeImageDownloadOperation *op in [imageLoadingQueue operations]) {
         op.delegate = [NSNull null];
     }
     [imageLoadingQueue cancelAllOperations];

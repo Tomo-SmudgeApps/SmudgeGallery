@@ -14,7 +14,7 @@
 		E5B3607B159D550E00923D09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5B36079159D550E00923D09 /* InfoPlist.strings */; };
 		E5B3607D159D550E00923D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3607C159D550E00923D09 /* main.m */; };
 		E5B36081159D550E00923D09 /* SmudgeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36080159D550E00923D09 /* SmudgeAppDelegate.m */; };
-		E5B36097159D557900923D09 /* ImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3608E159D557900923D09 /* ImageDownloadOperation.m */; };
+		E5B36097159D557900923D09 /* SmudgeImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3608E159D557900923D09 /* SmudgeImageDownloadOperation.m */; };
 		E5B36098159D557900923D09 /* SmudgeGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36090159D557900923D09 /* SmudgeGalleryViewController.m */; };
 		E5B36099159D557900923D09 /* SmudgeGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B36091159D557900923D09 /* SmudgeGalleryViewController.xib */; };
 		E5B3609A159D557900923D09 /* SmudgeGalleryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B36093159D557900923D09 /* SmudgeGalleryImageView.m */; };
@@ -36,8 +36,8 @@
 		E5B3607E159D550E00923D09 /* SmdugeLibraries-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmdugeLibraries-Prefix.pch"; sourceTree = "<group>"; };
 		E5B3607F159D550E00923D09 /* SmudgeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmudgeAppDelegate.h; sourceTree = "<group>"; };
 		E5B36080159D550E00923D09 /* SmudgeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmudgeAppDelegate.m; sourceTree = "<group>"; };
-		E5B3608D159D557900923D09 /* ImageDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadOperation.h; sourceTree = "<group>"; };
-		E5B3608E159D557900923D09 /* ImageDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadOperation.m; sourceTree = "<group>"; };
+		E5B3608D159D557900923D09 /* SmudgeImageDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeImageDownloadOperation.h; sourceTree = "<group>"; };
+		E5B3608E159D557900923D09 /* SmudgeImageDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeImageDownloadOperation.m; sourceTree = "<group>"; };
 		E5B3608F159D557900923D09 /* SmudgeGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmudgeGalleryViewController.h; sourceTree = "<group>"; };
 		E5B36090159D557900923D09 /* SmudgeGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmudgeGalleryViewController.m; sourceTree = "<group>"; };
 		E5B36091159D557900923D09 /* SmudgeGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmudgeGalleryViewController.xib; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 			children = (
 				E5B3609E159D55C300923D09 /* SmudgeImageDLManager.h */,
 				E5B3609F159D55C300923D09 /* SmudgeImageDLManager.m */,
-				E5B3608D159D557900923D09 /* ImageDownloadOperation.h */,
-				E5B3608E159D557900923D09 /* ImageDownloadOperation.m */,
+				E5B3608D159D557900923D09 /* SmudgeImageDownloadOperation.h */,
+				E5B3608E159D557900923D09 /* SmudgeImageDownloadOperation.m */,
 				E5B3608F159D557900923D09 /* SmudgeGalleryViewController.h */,
 				E5B36090159D557900923D09 /* SmudgeGalleryViewController.m */,
 				E5B36091159D557900923D09 /* SmudgeGalleryViewController.xib */,
@@ -200,7 +200,7 @@
 			files = (
 				E5B3607D159D550E00923D09 /* main.m in Sources */,
 				E5B36081159D550E00923D09 /* SmudgeAppDelegate.m in Sources */,
-				E5B36097159D557900923D09 /* ImageDownloadOperation.m in Sources */,
+				E5B36097159D557900923D09 /* SmudgeImageDownloadOperation.m in Sources */,
 				E5B36098159D557900923D09 /* SmudgeGalleryViewController.m in Sources */,
 				E5B3609A159D557900923D09 /* SmudgeGalleryImageView.m in Sources */,
 				E5B3609C159D557900923D09 /* SmudgePhotoContainer.m in Sources */,

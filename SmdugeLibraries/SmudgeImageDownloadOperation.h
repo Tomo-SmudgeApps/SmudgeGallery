@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SmudgeGalleryViewController.h"
 
-@interface ImageDownloadOperation : NSOperation
+@interface SmudgeImageDownloadOperation : NSOperation
 @property (nonatomic, readwrite) BOOL loadingImage;
 @property (nonatomic, readwrite) int imageIndex;
 

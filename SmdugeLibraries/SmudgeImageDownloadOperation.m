@@ -6,10 +6,10 @@
 //  Copyright 2011 Smudge Apps Ltd. All rights reserved.
 //
 
-#import "ImageDownloadOperation.h"
+#import "SmudgeImageDownloadOperation.h"
 #import "SmudgeImageDLManager.h"
 
-@implementation ImageDownloadOperation
+@implementation SmudgeImageDownloadOperation
 @synthesize delegate;
 @synthesize loadingImage, imageIndex;
 @synthesize loadedImage;
