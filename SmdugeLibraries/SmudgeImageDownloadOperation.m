@@ -27,6 +27,21 @@
     return self;
 }
 
+-(BOOL) isConcurrent{
+    return YES;
+}
+
+-(BOOL) isExecuting{
+    return loadingImage;
+}
+
+-(BOOL) isFinished{
+    if (loadingImage) {
+        return NO;
+    }
+    return YES;
+}
+
 -(void) getImageInTheBackground{
     @autoreleasepool {
         
@@ -78,7 +93,11 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if ([keyPath isEqualToString:@"loadingImage"] && loadingImage == NO) {
-        [(SmudgeGalleryViewController *)delegate loadImageAtIndex:imageIndex withImage:loadedImage];
+        if (![delegate isEqual:[NSNull null]]) {
+            if ([delegate isKindOfClass:[SmudgeGalleryViewController class]]) {
+                [(SmudgeGalleryViewController *)delegate loadImageAtIndex:imageIndex withImage:loadedImage];
+            }
+        }
     }
 }
 
