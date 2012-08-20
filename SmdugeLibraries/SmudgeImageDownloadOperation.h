@@ -1,5 +1,5 @@
 //
-//  ImageDownloadOperation.h
+//  SmudgeImageDownloadOperation.h
 //  StuffNZ
 //
 //  Created by Hisatomo Umaoka on 11/04/11.
@@ -9,13 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "SmudgeGalleryViewController.h"
 
-@interface SmudgeImageDownloadOperation : NSOperation
+@interface SmudgeImageDownloadOperation : NSOperation{
+    BOOL finished;
+    BOOL executing;
+}
 @property (nonatomic, readwrite) BOOL loadingImage;
 @property (nonatomic, readwrite) int imageIndex;
 
 @property (nonatomic, unsafe_unretained) id delegate;
 @property (nonatomic, unsafe_unretained) NSString *imageURLToLoad;
 
-@property (nonatomic, strong) UIImage *loadedImage;
+@property (nonatomic, unsafe_unretained) UIImage *loadedImage;
 
 @end

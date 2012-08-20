@@ -1,5 +1,5 @@
 //
-//  ImageDownloadOperation.m
+//  SmudgeImageDownloadOperation.m
 //  StuffNZ
 //
 //  Created by Hisatomo Umaoka on 11/04/11.
@@ -21,6 +21,8 @@
     if (self) {
         self.loadingImage = YES;
         self.loadedImage = nil;
+        executing = YES;
+        finished = NO;
         [self addObserver:self forKeyPath:@"loadingImage" options:0 context:nil];
     }
     
@@ -32,23 +34,24 @@
 }
 
 -(BOOL) isExecuting{
-    return loadingImage;
+    return executing;
 }
 
 -(BOOL) isFinished{
-    if (loadingImage) {
-        return NO;
-    }
-    return YES;
+    return finished;
+}
+
+-(void) updateStatusOnMain{
+    [self setValue:[NSNumber numberWithBool:NO] forKey:@"loadingImage"];
 }
 
 -(void) getImageInTheBackground{
     @autoreleasepool {
         
-        if ([[SmudgeImageDLManager sharedManager] imageExists:imageURLToLoad]) {            
+        if ([[SmudgeImageDLManager sharedManager] imageExists:imageURLToLoad]) {
             self.loadedImage = [[SmudgeImageDLManager sharedManager] getImageForLink:imageURLToLoad];
             
-            [self setValue:[NSNumber numberWithBool:NO] forKey:@"loadingImage"];
+            [self performSelectorOnMainThread:@selector(updateStatusOnMain) withObject:nil waitUntilDone:YES];
         }
         else{
             
@@ -80,14 +83,34 @@
                 }
             }
             
-            [self setValue:[NSNumber numberWithBool:NO] forKey:@"loadingImage"];
+            if (!self.isCancelled) {
+                [self performSelectorOnMainThread:@selector(updateStatusOnMain) withObject:nil waitUntilDone:YES];
+            }
         }
         
     }
 }
 
--(void) main{
-    [self performSelectorInBackground:@selector(getImageInTheBackground) withObject:nil];
+-(void) cancel{
+    [self removeObserver:self forKeyPath:@"loadingImage"];
+}
+
+-(void) start{
+    if ([self isCancelled])
+    {
+        // Must move the operation to the finished state if it is canceled.
+        [self willChangeValueForKey:@"isFinished"];
+        finished = YES;
+        [self didChangeValueForKey:@"isFinished"];
+        return;
+    }
+    
+    if (!self.isCancelled) {
+        [self willChangeValueForKey:@"isExecuting"];
+        [self performSelectorInBackground:@selector(getImageInTheBackground) withObject:nil];
+        executing = YES;
+        [self didChangeValueForKey:@"isExecuting"];
+    }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -95,7 +118,10 @@
     if ([keyPath isEqualToString:@"loadingImage"] && loadingImage == NO) {
         if (![delegate isEqual:[NSNull null]]) {
             if ([delegate isKindOfClass:[SmudgeGalleryViewController class]]) {
+                [self willChangeValueForKey:@"isFinished"];
                 [(SmudgeGalleryViewController *)delegate loadImageAtIndex:imageIndex withImage:loadedImage];
+                finished=YES;
+                [self didChangeValueForKey:@"isFinished"];
             }
         }
     }
