@@ -46,7 +46,7 @@
     captionView.hidden = NO;
     captionLabel.text = model.caption;
     
-    CGSize captionSize = [captionLabel sizeThatFits:CGSizeMake(imagescrollView.frame.size.width-10, FLT_MAX)];
+    CGSize captionSize = [captionLabel.text sizeWithFont:captionLabel.font constrainedToSize:CGSizeMake(imagescrollView.frame.size.width-10, FLT_MAX) lineBreakMode:UILineBreakModeWordWrap];
     captionLabel.frame = CGRectMake(5, 5,(int)imagescrollView.frame.size.width-10, (int)captionSize.height);
     
     int frameHeight = captionSize.height;
