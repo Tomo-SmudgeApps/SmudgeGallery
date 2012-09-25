@@ -257,14 +257,8 @@
 }
 
 - (void) viewWillAppear:(BOOL)animated{
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        width = 768;
-        height = 1024;
-    }
-    else{
-        width = 320;
-        height = 480;
-    }
+        width = [UIScreen mainScreen].bounds.size.width;
+        height = [UIScreen mainScreen].bounds.size.height;
     
     imageNumberLabel.text = [NSString stringWithFormat:@"%i of %i", currentPosition+1, [imageArray count]];
 
@@ -361,6 +355,14 @@
     
     // Return YES for supported orientations
 	return YES;
+}
+
+-(BOOL) shouldAutorotate{
+    return YES;
+}
+
+-(NSUInteger) supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskAll;
 }
 
 -(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
