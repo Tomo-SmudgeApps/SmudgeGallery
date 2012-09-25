@@ -17,14 +17,14 @@
 #import "SmudgeImageDLManager.h"
 #include <sys/xattr.h>
 
-@interface ImageInvocations : NSInvocationOperation {
+@interface SmudgeImageInvocations : NSInvocationOperation {
 @private
     NSString *imageURL;
 }
 @property (nonatomic, retain) NSString *imageURL;
 @end
 
-@implementation ImageInvocations
+@implementation SmudgeImageInvocations
 @synthesize imageURL;
 -(void) dealloc{
     self.imageURL = nil;
@@ -181,10 +181,10 @@
         return;
     }
     
-    ImageInvocations *inv = nil;
+    SmudgeImageInvocations *inv = nil;
     
     //Go through each operations and see if we've already requested it
-    for (ImageInvocations *op in [operationQueue operations]) {
+    for (SmudgeImageInvocations *op in [operationQueue operations]) {
         if ([op.imageURL isEqualToString:imageLink]) {
             //Get a reference to it
             inv = op;
@@ -197,7 +197,7 @@
         [inv setQueuePriority:queuePriority];
     }
     else{
-        ImageInvocations *operation = [[ImageInvocations alloc] initWithTarget:self selector:@selector(saveImageForLink:) object:imageLink];
+        SmudgeImageInvocations *operation = [[SmudgeImageInvocations alloc] initWithTarget:self selector:@selector(saveImageForLink:) object:imageLink];
         operation.imageURL = imageLink;
         [operation setQueuePriority:queuePriority];
         [operationQueue addOperation:operation];
